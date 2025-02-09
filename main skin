@@ -667,7 +667,8 @@ dl.index dd {
   border: 2px solid #fece3f;
 }
 
-.index .skins .icon {
+.index .skins .icon,
+.skins .primary .icon {
   background: url("https://64.media.tumblr.com/e721419ae5099c6f4edb8f348d4825e9/d5ca56ec48b65ea4-24/s100x200/50f0173ce7fbe9851bf726c56b2ed87f79e53c4f.png");
   border: 2px solid #bd7dfb;
   background-size: cover;
