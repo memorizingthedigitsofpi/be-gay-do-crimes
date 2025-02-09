@@ -568,7 +568,7 @@ dl.meta {
 
 fieldset,
 fieldset fieldset {
-  background: transparent;
+  background: #000;
   border-top: 2px solid #25e417;
   border-left: none;
   border-right: none;
