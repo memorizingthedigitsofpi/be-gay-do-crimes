@@ -1,0 +1,863 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+  font-family: "Century Gothic", sans-serif;
+  border-bottom: none;
+  font-weight: normal;
+  position: initial;
+}
+
+body,
+input,
+.toggled form,
+.dynamic form,
+.secondary,
+.dropdown,
+button,
+blockquote,
+.filters dt,
+.filters dd,
+.filters input[type="submit"],
+.filters .expander,
+.bookmark .user .meta,
+.datetime,
+a.work,
+span.symbol,
+.splash .news .meta,
+select {
+  font-family: "Century Gothic", sans-serif;
+}
+
+#main .actions a,
+#main .actions a:visited,
+#main .action,
+#main input[type="submit"],
+#main .current,
+#main .actions label,
+form.button_to button,
+.notice,
+.comment_notice,
+.kudos_notice,
+ul.notes,
+.caution,
+.error,
+.comment_error,
+.kudos_error,
+.alert.flash {
+  border: none;
+  background: #000;
+  color: #41c6f3;
+  box-shadow: 2px 2px #25e417, 4px 4px #6368f3, 6px 6px #bd7dfb;
+}
+
+#dashboard .actions a:hover,
+#dashboard .actions a:focus,
+#dashboard .current,
+#main .actions a:hover,
+#main input[type="submit"]:hover,
+#main button:hover .actions label:hover,
+#main .action:hover,
+#main .current,
+form.button_to button:hover {
+  border: none;
+  background: rgba(0,0,0,.2);
+  color: #d84a3c;
+  box-shadow: 2px 2px #25e417, 4px 4px #6368f3, 6px 6px #bd7dfb;
+}
+
+#outer.wrapper {
+  background: linear-gradient(rgba(0,57,68,1) 0%, rgba(3,48,77,1) 7%, rgba(8,34,91,1) 15%, rgba(18,17,61,1) 23%, rgba(53,16,23,1) 32%, rgba(66,18,16,1) 40%, rgba(68,51,4,1) 50%, rgba(81,36,5,1) 59%, rgba(66,18,16,1) 68%, rgba(53,16,23,1) 77%, rgba(18,17,61,1) 84%, rgba(8,34,91,1) 92%, rgba(3,48,77,1) 100%);
+  color: #d6d1d2;
+}
+
+#header .heading {
+  height: 20em;
+}
+
+#header {
+  background: url("https://64.media.tumblr.com/09ac33da6f9fe41cfbb2600c9b09a48e/d5ca56ec48b65ea4-c8/s2048x3072/9769a03572a41952ed16f39ea5c85145ac93079d.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#header ul.primary {
+  background: #000;
+}
+
+#header .logo,
+#greeting p.icon {
+  display: none;
+}
+
+#header .heading sup {
+  visibility: hidden;
+}
+
+#header h1.heading a::before {
+  margin-left: 1em;
+  content: "be gay";
+  color: #41c6f3;
+}
+
+#header .heading sup::before {
+  content: "  do crimes";
+  color: #ff85fe;
+  font-style: normal;
+  visibility: visible;
+}
+
+#header h1.heading span {
+  display: none;
+}
+
+#header input[type="submit"],
+#header input[type="submit"]:hover,
+#header input[type="submit"]:focus {
+  border: 1px solid #ff85fe !important;
+  background: #000;
+  color: #ff85fe;
+}
+
+#header #search .text {
+  background: #000;
+  border: 1px solid #ff85fe;
+}
+
+.search [role="tooltip"] {
+  background: #ff85fe;
+  border: 1px solid #000;
+  color: #000;
+}
+
+form.search [role="tooltip"] {
+  background: #6368f3;
+  color: #eae3e4,;
+}
+
+.actions input:hover {
+  box-shadow: 2px 2px 2px inset;
+}
+
+#header #search input:focus {
+  color: #ff85fe;
+}
+
+#header .menu {
+  background: #000;
+  box-shadow: 2px 2px #25e417, 4px 4px #6368f3, 6px 6px #bd7dfb;
+}
+
+#header .menu li {
+  color: #fece3f;
+  border-bottom: none;
+}
+
+#header .menu {
+  width: 20em;
+}
+
+#header .dropdown a,
+#greeting .user > li a {
+  color: #ff85fe !important;
+}
+
+#header .dropdown:hover a {
+  background: #000;
+}
+
+#header .dropdown a:hover,
+#header .actions a:hover,
+#header .actions a:focus {
+  background: #000 !important;
+  color: #fece3f !important;
+  border: 1px solid #fece3f;
+  border-radius: 5px;
+}
+
+#header .dropdown-menu li:nth-of-type(8n+1) a,
+.statistics .index li:nth-of-type(8n+1),
+.splash .favorite li:nth-of-type(8n+1) a,
+#dashboard .actions li:nth-of-type(8n+1) a {
+  color: #d84a3c !important;
+}
+
+#header .dropdown-menu li:nth-of-type(8n+2) a,
+.statistics .index li:nth-of-type(8n+2),
+.splash .favorite li:nth-of-type(8n+2) a,
+#dashboard .actions li:nth-of-type(8n+2) a {
+  color: #fc891f !important;
+}
+
+#header .dropdown-menu li:nth-of-type(8n+3) a,
+.statistics .index li:nth-of-type(8n+3),
+.splash .favorite li:nth-of-type(8n+3) a,
+#dashboard .actions li:nth-of-type(8n+3) a {
+  color: #fece3f !important;
+}
+
+#header .dropdown-menu li:nth-of-type(8n+4) a,
+.statistics .index li:nth-of-type(8n+4),
+.splash .favorite li:nth-of-type(8n+4) a,
+#dashboard .actions li:nth-of-type(8n+4) a {
+  color: #25e417 !important;
+}
+
+#header .dropdown-menu li:nth-of-type(8n+5) a,
+.statistics .index li:nth-of-type(8n+5),
+.splash .favorite li:nth-of-type(8n+5) a,
+#dashboard .actions li:nth-of-type(8n+5) a {
+  color: #41c6f3 !important;
+}
+
+#header .dropdown-menu li:nth-of-type(8n+6) a,
+.statistics .index li:nth-of-type(8n+6),
+.splash .favorite li:nth-of-type(8n+6) a,
+#dashboard .actions li:nth-of-type(8n+6) a {
+  color: #6368f3 !important;
+}
+
+#header .dropdown-menu li:nth-of-type(8n+7) a,
+.statistics .index li:nth-of-type(8n+7),
+.splash .favorite li:nth-of-type(8n+7) a,
+#dashboard .actions li:nth-of-type(8n+7) a {
+  color: #bd7dfb !important;
+}
+
+#header .dropdown-menu li:nth-of-type(8n+8) a,
+.statistics .index li:nth-of-type(8n+8),
+.splash .favorite li:nth-of-type(8n+8) a,
+#dashboard .actions li:nth-of-type(8n+8) a {
+  color: #ff85fe !important;
+}
+
+.splash .favorite li:nth-of-type(odd) a {
+  background: transparent;
+}
+
+.splash .favorite li:hover a,
+.splash .favorite li:nth-of-type(odd) a:hover {
+  background: #000;
+}
+
+.splash .module h3 {
+  color: #fece3f;
+}
+
+.splash .link a,
+h4 .heading a {
+  color: #25e417;
+}
+
+a,
+a:link,
+a:visited:hover {
+  color: #41c6f3;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+span.action.top a {
+  color: #41c6f3;
+}
+
+a:visited {
+  color: #d84a3c;
+  text-decoration: none;
+  border-bottom: 1px dashed #d84a3c;
+}
+
+a:hover {
+  color: #bd7dfb;
+  background: rgba(255,255,255,.2);
+}
+
+.resp-sharing-button--twitter {
+  background: #d84a3c !important;
+}
+
+.resp-sharing-button--tumblr {
+  background: #fc891f !important;
+}
+
+li.comment {
+  border-top: 2px solid #fc891f;
+  border-left: 2px solid #fc891f;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.unread {
+  background: #000 !important;
+  border: 2px solid #ff85fe;
+  color: #ff85fe !important;
+}
+
+.unread h4.byline {
+  background: #000;
+}
+
+.replied,
+span.claimed,
+.actions span.defaulted {
+  background: #000;
+  color: #25e417;
+  border: 2px solid #25e417;
+}
+
+.comment h4.byline,
+.thread .even {
+  background: rgba(255,255,255,.2);
+}
+
+#footer {
+  background: #003944;
+  border-top: 2px solid #41c6f3;
+  color: #41c6f3;
+}
+
+#footer .heading,
+#footer a {
+  color: #41c6f3;
+}
+
+dl.meta.work.group {
+  border: 1px solid #000;
+  box-shadow: 2px 2px #6368f3;
+}
+
+.wrapper {
+  box-shadow: none;
+}
+
+.meta dt,
+.meta .stats dl dd,
+.meta .stats dl dt {
+  color: #eae3e4;
+}
+
+.blurb .heading a,
+.blurb h4 a {
+  color: #bd7dfb !important;
+}
+
+a.tag,
+a.tag:visited,
+a.tag:link {
+  display: inline-block;
+  padding: 2px 5px;
+  margin: 2px 0px;
+  border-radius: 5px;
+}
+
+a.tag:hover {
+  background: rgba(255,255,255,.3);
+}
+
+.commas li:after {
+  content: "";
+}
+
+h5.fandoms.heading a.tag {
+  background: #bd7dfb;
+  color: #000 !important;
+  border: 1px solid #bd7dfb;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+h5.fandoms.heading a.tag:hover {
+  background: #000;
+  color: #bd7dfb !important;
+  border: 1px solid #bd7dfb;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+dd.fandom.tags a {
+  color: #bd7dfb;
+}
+
+.tags li.warnings a.tag {
+  background: #d84a3c;
+  border: 1px solid #d84a3c;
+  color: #000;
+}
+
+.tags li.warnings a.tag:hover {
+  background: #000;
+  border: 1px solid #d84a3c;
+  color: #d84a3c !important;
+}
+
+dd.warning.tags a {
+  color: #d84a3c;
+}
+
+dt.warning.tags a {
+  color: #eae3e4;
+  font-weight: normal;
+}
+
+.tags li.relationships a.tag {
+  background: #ff85fe;
+  border: 1px solid #ff85fe;
+  color: #000;
+}
+
+dd.relationship.tags a {
+  color: #ff85fe;
+}
+
+.tags li.relationships a.tag:hover {
+  background: #000;
+  border: 1px solid #ff85fe;
+  color: #ff85fe;
+}
+
+.tags li.characters a.tag {
+  background: #6368f3;
+  border: 1px solid #6368f3;
+  color: #000;
+}
+
+.tags li.characters a.tag:hover {
+  background: #000;
+  border: 1px solid #6368f3;
+  color: #6368f3;
+}
+
+dd.character.tags a {
+  color: #6368f3;
+}
+
+.tags li.freeforms a.tag {
+  background: #41c6f3;
+  border: 1px solid #41c6f3;
+  color: #000;
+}
+
+.tags li.freeforms a.tag:hover {
+  background: #000;
+  border: 1px solid #41c6f3;
+  color: #41c6f3;
+}
+
+dd.freeform.tags a {
+  color: #41c6f3;
+}
+
+dd.rating.tags a {
+  color: #25e417;
+}
+
+dd.category.tags a {
+  color: #fc891f;
+}
+
+dd.language {
+  color: #fece3f;
+}
+
+dd.rating.tags a:hover,
+dd.warning.tags a:hover,
+dd.category.tags a:hover,
+dd.fandom.tags a:hover,
+dd.relationship.tags a:hover,
+dd.character.tags a:hover,
+dd.freeform.tags a:hover {
+  background: #000;
+}
+
+.preface h3 {
+  color: #bd7dfb;
+}
+
+.comment fieldset {
+  background: #000;
+  border: 3px solid #bd7dfb;
+}
+
+div.comment {
+  border: none;
+}
+
+input,
+textarea {
+  background: rgba(0,0,0,.5) !important;
+  color: #eae3e4 !important;
+  box-shadow: none;
+  border: 2px solid #6368f3;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  background: rgba(0,0,0,.2);
+  color: #eae3e4;
+  box-shadow: none;
+  border: 2px solid #6368f3;
+}
+
+.LV_invalid {
+  background: #000;
+  border: 1px solid #d84a3c;
+  color: #d84a3c;
+  padding: 0.25em 0.375em;
+  box-shadow: 2px 2px #fc891f;
+  border-radius: 0.25em;
+}
+
+.alert .userstuff {
+  background: #bd7dfb;
+  color: #000;
+  border: 1px solid #bd7dfb;
+  border-radius: 5px;
+  box-shadow: -2px -2px #41c6f3, -4px -4px #6368f3, -6px -6px #25e417;
+}
+
+.listbox,
+fieldset fieldset.listbox {
+  background: rgba(0,0,0,.2);
+  border-top: 2px solid #fece3f;
+  border-left: 2px solid #fece3f;
+  border-right: none;
+  border-bottom: none;
+  box-shadow: none;
+}
+
+.listbox li.blurb {
+  border-top: none;
+  border-left: none;
+  border-right: 2px solid #fece3f;
+  border-bottom: 2px solid #fece3f;
+  box-shadow: none;
+}
+
+.listbox > .heading {
+  color: #fece3f;
+}
+
+.listbox .heading a:visited {
+  color: #d84a3c;
+}
+
+.listbox .index {
+  background: none;
+  box-shadow: none;
+}
+
+.primary .icon,
+a img,
+.index .picture .icon {
+  border-radius: 90%;
+}
+
+dl.meta {
+  background: rgba(0,0,0,.3);
+  border: 1px solid #000;
+}
+
+fieldset,
+fieldset fieldset {
+  background: transparent;
+  border-top: 2px solid #25e417;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  box-shadow: none;
+}
+
+select,
+option,
+.actions option,
+form code {
+  background: #000;
+  border: 2px solid #6368f3;
+  color: #eae3e4;
+  box-shadow: none;
+}
+
+input[type="radio"],
+input[type="checkbox"],
+input[type="file"],
+input.number,
+p select,
+.heading select,
+li select {
+  background: #6368f3 !important;
+  border: 2px solid #000;
+}
+
+form dl {
+  background: transparent;
+  border: none;
+}
+
+form.search input[type="text"] {
+  background: rgba(0,0,0,.6);
+  border: 2px solid #6368f3;
+  box-shadow: none;
+}
+
+span.symbol,
+span.question {
+  background: #6368f3;
+  color: #eae3e4;
+  border: 1px solid #000;
+}
+
+label,
+.meta p,
+.footnote,
+p.character_counter {
+  color: #eae3e4;
+}
+
+.meta dt,
+form dt {
+  border-bottom: none;
+}
+
+form.verbose legend,
+.verbose form legend {
+  background: #000;
+  color: #eae3e4;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px #25e417;
+}
+
+#modal {
+  background: #000;
+  border: 2px solid #25e417;
+  color: #eae3e4;
+}
+
+#modal .footer {
+  border-top: 2px solid #25e417;
+}
+
+#modal .footer .action.modal-closer {
+  border: none;
+  background: rgba(255,255,255,.3);
+  color: #eae3e4;
+}
+
+.tox .tox-toolbar,
+.tox .tox-toolbar__overflow,
+.tox .tox-toolbar__primary {
+  background: #6368f3 !important;
+}
+
+dl.index dd {
+  background: none;
+}
+
+.tag .primary .icon {
+  background: url("https://64.media.tumblr.com/59cbd6c13417d9d5158d84dda7113e7e/d5ca56ec48b65ea4-6f/s100x200/c8081fadb5eec5e7a62eef729a206e3e15c25f02.png");
+  border: 2px solid #fece3f;
+}
+
+.index .skins .icon {
+  background: url("https://64.media.tumblr.com/e721419ae5099c6f4edb8f348d4825e9/d5ca56ec48b65ea4-24/s100x200/50f0173ce7fbe9851bf726c56b2ed87f79e53c4f.png");
+  border: 2px solid #bd7dfb;
+  background-size: cover;
+}
+
+.home .header h2 {
+  color: #fc891f;
+}
+
+#dashboard.own,
+#dashboard ul {
+  border: none;
+}
+
+.filters .expander {
+  color: #bd7dfb;
+}
+
+.filters .expanded .expander {
+  background-image: url("https://64.media.tumblr.com/e38065be453931512098d1c472879694/d5ca56ec48b65ea4-76/s75x75_c1/32d286f0f5e3c872823ca0d6ca797ef8825ba803.png");
+}
+
+.filters .expander {
+  background-image: url("https://64.media.tumblr.com/5c49e2e9ee0f4a80dcb2609cbb9099e0/d5ca56ec48b65ea4-eb/s75x75_c1/d9eb2182f7bcd0b961a18cd0ddaa5b1444b27967.png");
+}
+
+.dropdown {
+  background: transparent;
+}
+
+.autocomplete .notice {
+  background: #000;
+  color: #fc891f;
+  border: 1px solid #fc891f;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.autocomplete li.added,
+.post .meta dd ul li.added {
+  color: white;
+}
+
+.draft,
+.draft .wrapper {
+  background: rgba(0,0,0,.2);
+}
+
+.toggled form,
+.dynamic form {
+  background: #000;
+  color: #eae3e4;
+  border: none;
+  box-shadow: 2px 2px #41c6f3 inset;
+}
+
+div.dynamic {
+  background: none;
+}
+
+.comment div.icon {
+  border: none;
+}
+
+.statistics .index li:nth-of-type(2n),
+.reading h4.viewed {
+  background: rgba(0,0,0,.3);
+}
+
+#stat_chart svg rect:first-of-type {
+  opacity: 50%;
+}
+
+#stat_chart g[clip-path^=url] > g:nth-of-type(2) rect,
+#stat_chart svg g:nth-of-type(2) > g rect:last-of-type,
+#stat_chart g[clip-path^=url] > g:nth-of-type(2) rect:first-of-type {
+  filter: hue-rotate(200deg);
+  opacity: 100% !important;
+}
+
+#stat_chart svg text {
+  font-family: "Century Gothic", Arial, sans-serif;
+}
+
+#stat_chart g[clip-path^=url] > g:nth-of-type(2) rect:hover {
+  filter: hue-rotate(290deg);
+}
+
+table,
+th,
+.child {
+  background: none;
+  border: none;
+}
+
+tbody tr {
+  border-bottom: 1px solid #41c6f3;
+}
+
+.required-tags .rating-teen {
+  background: url("https://64.media.tumblr.com/51ff4ca6c48c9ab729119e319216ca7b/d5ca56ec48b65ea4-21/s75x75_c1/5f2beb0d8c7888ce2978a45259143dacdc5440b6.png");
+  background-size: cover;
+}
+
+.required-tags .rating-explicit {
+  background: url("https://64.media.tumblr.com/96433882cb37d269ed517b2400349eb8/d5ca56ec48b65ea4-03/s75x75_c1/8524e6c03cd26f389efef96410b85616d449135d.png");
+  background-size: cover;
+}
+
+.required-tags .rating-mature {
+  background: url("https://64.media.tumblr.com/9518388eafd95c571d301c226959c501/d5ca56ec48b65ea4-54/s75x75_c1/25aa53994fe2f4621952b48795ac3b39a81339b6.png");
+  background-size: cover;
+}
+
+.required-tags .rating-general-audience {
+  background: url("https://64.media.tumblr.com/15644415f4977709606c662b19db9e7c/d5ca56ec48b65ea4-70/s75x75_c1/2c0e2cf522faccf37d846ec605bfacf38f6968ea.png");
+  background-size: cover;
+}
+
+.required-tags .rating-notrated,
+.required-tags .category-none,
+.required-tags .warning-no,
+.status .count {
+  background: url("https://64.media.tumblr.com/42253659674f77baa7c7556e0421d2f3/d5ca56ec48b65ea4-d2/s75x75_c1/42688c9c94ff401db204d39ca0bc9785cde56e20.png");
+  background-size: cover;
+}
+
+.required-tags .warning-choosenotto {
+  background: url("https://64.media.tumblr.com/1847f449c3ccdcf6552bf010400f13a8/d5ca56ec48b65ea4-b4/s75x75_c1/813836df166a068b98528793384284fb93a025d4.png");
+  background-size: cover;
+}
+
+.required-tags .warning-yes {
+  background: url("https://64.media.tumblr.com/453e4d9d7dcd08496ee5da73d5a83241/d5ca56ec48b65ea4-7e/s75x75_c1/f14867117a396ff0b8447f6129457f368f852016.png");
+  background-size: cover;
+}
+
+.required-tags .category-multi {
+  background: url("https://64.media.tumblr.com/71ca378a06aaa0cc5a250366cd5e1a5c/d5ca56ec48b65ea4-44/s75x75_c1/0f03894d8c3b2f729b50ef38ba0b2933d46f4cb2.png");
+  background-size: cover;
+}
+
+.required-tags .category-slash {
+  background: url("https://64.media.tumblr.com/40ab99c040301a7b6fa221516847bbd6/d5ca56ec48b65ea4-4f/s75x75_c1/bec9ed5bbb64d642b6621ffe9047ca1f06742ddc.png");
+  background-size: cover;
+}
+
+.required-tags .category-het {
+  background: url("https://64.media.tumblr.com/e19076acaf2884cac12dae0bba8296e1/d5ca56ec48b65ea4-3e/s75x75_c1/6dc876eb793084651757d7fdb7693df8718bdd6e.png");
+  background-size: cover;
+}
+
+.required-tags .category-femslash {
+  background: url("https://64.media.tumblr.com/42b3b32a9ffea239da140c0b564860eb/d5ca56ec48b65ea4-af/s75x75_c1/e283c4f5c70873ab842337fb27c288e65b1841d1.png");
+  background-size: cover;
+}
+
+.required-tags .category-gen {
+  background: url("https://64.media.tumblr.com/f3a28c7c5546b5f625df86241bf97381/d5ca56ec48b65ea4-50/s75x75_c1/00f0c19471cc5f7837ffe6d0284d714ae8c1d2e7.png");
+  background-size: cover;
+}
+
+.required-tags .category-other {
+  background: url("https://64.media.tumblr.com/ff17154c459b0cbbae52711feefc57e8/d5ca56ec48b65ea4-6b/s75x75_c1/fe7696ff99fbdba10c2dc2a8c624d86d431ee7b7.png");
+  background-size: cover;
+}
+
+.required-tags .complete-no {
+  background: url("https://64.media.tumblr.com/b5fda4e47657cf087629eaff49043e8f/d5ca56ec48b65ea4-9a/s75x75_c1/24498fcc0d51ccaba283e26abb46c98b7cd705af.png");
+  background-size: cover;
+}
+
+.required-tags .complete-yes {
+  background: url("https://64.media.tumblr.com/c668752a0fddaa6e0d50ec7bedc2c4ae/d5ca56ec48b65ea4-fd/s75x75_c1/8016bcb283edc3be72ca99d6b6421978d76a687e.png");
+  background-size: cover;
+}
+
+.status .rec {
+  background: url("https://64.media.tumblr.com/62285e1ab387f93cd39fe28196bee245/d5ca56ec48b65ea4-07/s250x400/4d9066570bf9c4d468d07187c005cdd3936ea9f9.png");
+  background-size: cover;
+}
+
+.status .public,
+.required-tags .external-work {
+  background: url("https://64.media.tumblr.com/b3bfedcb97a3c4d1e530cfb6a38ed9a1/d5ca56ec48b65ea4-c2/s250x400/1aaea3dc124954768c3d66a140215da818aad2bf.png");
+  background-size: cover;
+}
+
+.status .private .text {
+  background: url("https://64.media.tumblr.com/9ea968b359c8e4a27e2aaf02d1089f43/d5ca56ec48b65ea4-b6/s250x400/4099cb65b7416bb3999b1b17231a7e8af63802ab.png");
+  background-size: cover;
+}
+
+.status .hidden {
+  background: url("https://64.media.tumblr.com/90d2dcd5b295733b7e3b17501c8c189e/d5ca56ec48b65ea4-3a/s250x400/762363027e55caaa45fd3bd7a0276f7e5ca76caf.png");
+  background-size: cover;
+}
