@@ -74,6 +74,10 @@ form.button_to button:hover {
   color: #d6d1d2;
 }
 
+p.muted.notice {
+display: none;
+}
+
 #header .heading {
   height: 20em;
 }
