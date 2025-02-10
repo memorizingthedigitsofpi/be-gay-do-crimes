@@ -866,3 +866,7 @@ tbody tr {
   background: url("https://64.media.tumblr.com/90d2dcd5b295733b7e3b17501c8c189e/d5ca56ec48b65ea4-3a/s250x400/762363027e55caaa45fd3bd7a0276f7e5ca76caf.png");
   background-size: cover;
 }
+
+.own {
+background: transparent;
+}
